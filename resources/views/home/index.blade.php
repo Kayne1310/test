@@ -1,5 +1,5 @@
   @extends('master.main')
-  @section('title','trang chủ')
+  @section('title','Home')
   @section('main')
                                
                                   
@@ -15,7 +15,7 @@
                        </div>
                        <div class="col-xs-12 col-md-4 col-lg-4" >
                            <div class="logo">
-                               <a href="index.html"><img src="img/icon/Kayne.png" alt=""></a>
+                               <a href="{{route('home.index')}}"><img src="img/icon/Kayne.png" alt=""></a>
                            </div>
                        </div>
                        <div class="col-xs-12 col-md-4 col-lg-4" >
@@ -84,7 +84,7 @@
                                         <li class="active"><a href="#">home </a>
                                          
                                         </li>
-                                        <li><a href="shop.html">clothing </a>
+                                        <li><a href="{{route('home.product')}}">clothing </a>
                                             <div class="mega-menu">
                                                 <div class="mega-catagory">
                                                     <h4><a href="#"><span>handbags</span></a></h4>
@@ -196,7 +196,7 @@
                                                 <li><a href="wishlist.html">wishlist</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">contact us</a></li>
+                                        <li><a href="{{route('home.contact')}}">contact us</a></li>
                                     </ul>
                                 </nav>
                             </div>  
@@ -3220,41 +3220,40 @@
        
 
         
-
 		<!-- jquery
 		============================================ -->		
-        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="/js/vendor/jquery-1.12.4.min.js"></script>
 		<!-- bootstrap JS
 		============================================ -->		
-        <script src="js/bootstrap.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
 		<!-- wow JS
 		============================================ -->		
-        <script src="js/wow.min.js"></script>
+        <script src="/js/wow.min.js"></script>
 		<!-- price-slider JS
 		============================================ -->		
-        <script src="js/jquery-price-slider.js"></script>		
+        <script src="/js/jquery-price-slider.js"></script>		
 		<!-- meanmenu JS
 		============================================ -->		
-        <script src="js/jquery.meanmenu.js"></script>
+        <script src="/js/jquery.meanmenu.js"></script>
 		<!-- owl.carousel JS
 		============================================ -->		
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
         <!-- Nivo slider js
 		============================================ --> 		
-		<script src="custom-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
-		<script src="custom-slider/home.js" type="text/javascript"></script>
+		<script src="/custom-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+		<script src="/custom-slider/home.js" type="text/javascript"></script>
 		<!-- scrollUp JS
 		============================================ -->		
-        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="/js/jquery.scrollUp.min.js"></script>
 		<!-- plugins JS
 		============================================ -->		
-        <script src="js/plugins.js"></script>
+        <script src="/js/plugins.js"></script>
         <!--zoom plugin
         ============================================ --> 
-        <script src='js/jquery.elevatezoom.js'></script>
+        <script src='/js/jquery.elevatezoom.js'></script>
 		<!-- main JS
 		============================================ -->		
-        <script src="js/main.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 
 

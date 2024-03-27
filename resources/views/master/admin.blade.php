@@ -92,7 +92,7 @@
         </li>
 
         <li class="treeview">
-          <a href="#">
+          <a href="{{route('order.index')}}">
             <i class="fa fa-shopping-cart"></i> <span>Orders</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           {{-- <ul class="treeview-menu">

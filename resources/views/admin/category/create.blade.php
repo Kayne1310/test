@@ -7,7 +7,7 @@
     <div class="col-md-4">
         
         <form action="" method="POST" role="form">
-        
+        @csrf
             <div class="form-group">
                 <label for="">Category name</label>
                 <input type="text" class="form-control" id="" placeholder="Input field">

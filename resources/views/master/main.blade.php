@@ -5,17 +5,17 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Home  | Kayne</title>
+        <title>@yield('title')</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         
 		<!-- favicon
 		============================================ -->		
-        <link rel="shortcut icon" type="image/x-icon" href="img/icon/favicon.ico">
-        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/img/icon/favicon.ico">
+        <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
 
-        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="/css/fontawesome-all.min.css">
 		
 		<!-- Google Fonts
 		============================================ -->
@@ -28,50 +28,68 @@
      
 		<!-- Bootstrap CSS
 		============================================ -->		
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
 		<!-- Bootstrap CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
 		<!-- owl.carousel CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/owl.transitions.css">
+        <link rel="stylesheet" href="/css/owl.carousel.css">
+        <link rel="stylesheet" href="/css/owl.theme.css">
+        <link rel="stylesheet" href="/css/owl.transitions.css">
         <!-- nivo slider CSS
 		============================================ -->
-		<link rel="stylesheet" href="custom-slider/css/nivo-slider.css" type="text/css" />
-		<link rel="stylesheet" href="custom-slider/css/preview.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/custom-slider/css/nivo-slider.css" type="text/css" />
+		<link rel="stylesheet" href="/custom-slider/css/preview.css" type="text/css" media="screen" />
 		<!-- jquery-ui CSS
 		============================================ -->
     
 
-        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="/css/jquery-ui.css">
 		<!-- meanmenu CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/meanmenu.min.css">
+        <link rel="stylesheet" href="/css/meanmenu.min.css">
 		<!-- animate CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="/css/animate.css">
 		<!-- normalize CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="/css/normalize.css">
 		<!-- main CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="/css/main.css">
 		<!-- style CSS
 		============================================ -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/style.css">
 		<!-- responsive CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="/css/responsive.css">
 		<!-- modernizr JS
 		============================================ -->		
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.css" />
+
+        {{-- text menu profile --}}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda+One">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+        
+    
     </head>
     <body>
-       
+         <!-- preloader -->
+      
+
+		<!-- Scroll-top -->
+        
+        <!-- preloader-end -->
     
     <div class="home-three-wrapper">
        <!--HEADER AREA START-->
@@ -100,14 +118,14 @@
                                         <a  href="mailto:khanhdjkl@gmail.com">khanhdjkl@gmail.com</a>
                                     </li>
                                    
-                                   
+                                  
                                     
                                     <!--SINGLE MENU WITH DROPDOWN-->
-                                    <li class="dropdown">
+                                    {{-- <li class="dropdown">
                                         <a data-bs-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
                                             @if(auth('cus')->check())
                                             <li class="header-a"><a href="{{ route('account.profile') }}">ProFile</a></li>
-                                                <li class="header-a"><a href="#">Change Password</a></li>
+                                                <li class="header-a"><a href="{{route("account.change_password")}}">Change Password</a></li>
                                                 <li class="header-a"><a href="#">Favorites</a></li>
                                                 <li class="header-a" ><a href="#">My Orders</a></li>
                                                 <li class="header-a"><a href="{{route("account.login")}}">Logout</a></li>
@@ -116,7 +134,35 @@
                                             
                                             @endif  
                                         
+                                    
+                                           
+                                    </li> --}}
+                                    <li> 
+                                        
+                                        @if(auth('cus')->check())
+                                            <div class="nav-item dropdown">
+                                                
+                                                <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><i class="fa fa-user"></i> Profile <b class="caret"></b></a>
+                                                <div class="dropdown-menu">
+                                                    <a href="{{ route('account.profile') }}" class="dropdown-item"> Profile</a></a>
+                                                    <a href="{{route("account.change_password")}}" class="dropdown-item"> Change Password</a></a>
+                                                    <a href="#" class="dropdown-item"> Favorite</a></a>
+                                                    <a href="{{route('cart.index')}}" class="dropdown-item"> My Orders</a></a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="{{route("account.login")}}" class="dropdown-item"> Logout</a></a>
+                                                </div>
+                                            </div>
+                                         @else
+                                            <span><a href="{{route("account.login")}}"><i class="fa fa-user"></i> Login </a></span>
+                                            
+                                         @endif  
+                                        
                                     </li>
+                                  
+                                   
+                                   
+                                     
+                                    
                                 </ul>
                             </div>
                        </div>
@@ -200,13 +246,13 @@
                                  <h5>about us</h5>
                                  <div class="footer-static-content">
                                      <p class="adress"><i class="fa fa-map-marker"></i>
-                                     <span>8901 Marmora Road, Glasgow D04 89 GR, New York </span>
+                                     <span>Son Dong Hoai Duc Ha Noi </span>
                                      </p>
                                      <p class="phone"><i class="fa fa-phone"></i>
-                                     <span>(0123)456789<br> (0987) 654321</span>
+                                     <span>0868431077</span>
                                      </p>
                                      <p class="email"><i class="fa fa-envelope"></i>
-                                     <span>admin@bootexperts.com</span>	
+                                     <span>khanhdjkl@gmail.com</span>	
                                      </p>
                                  </div>
                              </div>
@@ -218,7 +264,7 @@
                  <div class="container">
                      <div class="row">
                          <div class="col-xs-12 col-md-6 col-lg-6">
-                             <p>Copyright &copy; 2021 <a target="_blank" href="https://hasthemes.com/">Hasthemes.</a>All rights reserved.</p>
+                             <p>Copyright &copy; 2024 Kayne</p>
                          </div>
                          <div class="col-xs-12 col-md-6 col-lg-6">
                             <div class="footer-payment">
@@ -285,8 +331,47 @@
         </div>
 	    <!-- END QUICKVIEW PRODUCT -->
          </div>   
+            <!-- jquery
+                ============================================ -->		
+                <script src="/js/vendor/jquery-1.12.4.min.js"></script>
+                <!-- bootstrap JS
+                ============================================ -->		
+                <script src="/js/bootstrap.min.js"></script>
+                <!-- wow JS
+                ============================================ -->		
+                <script src="/js/wow.min.js"></script>
+                <!-- price-slider JS
+                ============================================ -->		
+                <script src="/js/jquery-price-slider.js"></script>		
+                <!-- meanmenu JS
+                ============================================ -->		
+                <script src="/js/jquery.meanmenu.js"></script>
+                <!-- owl.carousel JS
+                ============================================ -->		
+                <script src="/js/owl.carousel.min.js"></script>
+                <!-- Nivo slider js
+                ============================================ --> 		
+                <script src="/custom-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+                <script src="/ustom-slider/home.js" type="text/javascript"></script>
+                <!-- scrollUp JS
+                ============================================ -->		
+                <script src="/js/jquery.scrollUp.min.js"></script>
+                <!-- plugins JS
+                ============================================ -->		
+                <script src="/js/plugins.js"></script>
+                <!--zoom plugin
+                ============================================ --> 
+                <script src='/js/jquery.elevatezoom.js'></script>
+                <!-- main JS
+                ============================================ -->		
+                <script src="/js/main.js"></script>  
+                
+                    
          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js"></script>
-        @yield('js')
+        
+         
+         
+         @yield('js')
         @if(Session::has('ok'))
         <script>
             $.toast({

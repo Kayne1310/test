@@ -4,7 +4,9 @@ use App\Http\Controllers\AccountController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +21,8 @@ use Illuminate\Support\Facades\Route;
 */
 //route den trang home
 Route::get('/',[HomeController::class,'index'])->name('home.index');
-
+Route::get('/contact', [HomeController::class, 'contact'])->name('home.contact');
+Route::get('/product', [HomeController::class, 'product'])->name('home.product');
 
 
 //route den trang admin 
@@ -30,10 +33,11 @@ Route::post('/admin/login', [AdminController::class, 'check_login']);
 Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
     Route::get('/',[AdminController::class,'index'])->name('admin.index');
     Route::get('/logout', [AdminController::class, 'logout'])->name('admin.logout');
-
+    Route::get('/order', [OrderController::class, 'index'])->name('order.index');
     
-    Route::resource('category', CategoryController::class);
+    Route::resource('category',CategoryController::class);
     Route::resource('product', ProductController::class);
+    Route::get('product-delete-image/{image}', [ProductController::class,'destroyImage'])->name('product.destroyImage');
 });
 
 
@@ -63,4 +67,15 @@ Route::group(['prefix' => 'account'], function() {
     Route::get('/reset-password/{token}', [AccountController::class, 'reset_password'])->name('account.reset_password');
     Route::post('/reset-password/{token}', [AccountController::class, 'check_reset_password']);
 
+});
+
+
+
+
+Route::group(['prefix' => 'cart','middleware' => 'customer'], function() {
+    Route::get('/', [CartController::class, 'index'])->name('cart.index');
+    Route::get('/add/{product}', [CartController::class, 'add'])->name('cart.add');
+    Route::get('/delete/{product}', [CartController::class, 'delete'])->name('cart.delete');
+    Route::get('/update/{product}', [CartController::class, 'update'])->name('cart.update');
+    Route::get('/clear', [CartController::class, 'clear'])->name('cart.clear');
 });

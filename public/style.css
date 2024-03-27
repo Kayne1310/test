@@ -42,6 +42,11 @@
    16. CHECKOUT PAGE
 -----------------------------------------------------------------------------------*/
 
+
+/* test loader */
+/* CSS cho loader */
+
+
 /*************************
  Bootstrap Custom Container
 ************************/
@@ -181,8 +186,8 @@ font-family: 'Lato', sans-serif;}
 .header-top{
 background-color: #eeeeee;
 border-bottom: 1px solid #e2e2e2;
-min-height: 40px;
-padding: 4px 0 3px;
+height: 60px;
+
 }
 .top-bar-menu > ul > li {
 background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -253,6 +258,7 @@ height: 40px;
 line-height: 40px;
 padding-left: 15px;
 font-size: 16px;
+padding-top: 10px;
 }
 
 .header-location{
@@ -266,6 +272,7 @@ font-size: 16px;
 .header-a a{
   font-size: 14px;
   color: rgb(102, 102, 102);
+  text-decoration: none !important;
 }
 .header-a a:hover{
   color: rgba(255, 60, 0, 0.971);
@@ -380,7 +387,11 @@ z-index: 1;
 }
 .main-menu nav ul li a:hover,.main-menu nav ul li.active > a{background: #E48080;color: #fff}
 .main-menu-area {
-background: #f1f1f1 none repeat scroll 0 0;
+background: #f1f1f1 none repeat scroll 0 0 !important;
+;
+}
+.main-menu-area a{
+  color: #000 !important;
 }
 .main-menu ul li .mega-menu {
 background-color: #fff;
@@ -2644,6 +2655,12 @@ font-weight: 300;
 line-height: 24px;
 padding: 0px 90px;
 }
+.contact-info a{
+  color:rgb(255, 255, 255);
+}
+.contact-info a:hover{
+  color: red;
+}
 .contact-bottom-area .contact-form input{
 background: #f2f2f2 none repeat scroll 0 0;
 border: medium none;
@@ -2733,9 +2750,7 @@ width: 88px;
   left: -10px;
 }
 
-.review-wrapper{
 
-}
 .review-wrapper .nav.nav-tabs{
   background: rgba(0, 0, 0, 0) url(img/icon/tab-bg.png) repeat-x scroll center 50%;
   list-style: outside none none !important;
@@ -2778,3 +2793,118 @@ width: 88px;
 .related-pro-carousel .owl-nav button.owl-prev {
   margin-left: -120px;
 }
+
+
+
+
+/* profile */
+
+.img-account-profile {
+  height: 10rem;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+.card {
+  box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+}
+.card .card-header {
+  font-weight: 500;
+}
+.card-header:first-child {
+  border-radius: 0.35rem 0.35rem 0 0;
+}
+.card-header {
+  padding: 1rem 1.35rem;
+  margin-bottom: 0;
+  background-color: rgba(33, 40, 50, 0.03);
+  border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+.form-control, .dataTable-input {
+  display: block;
+  width: 100%;
+  
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #69707a;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c5ccd6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.35rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* .nav-borders .nav-link.active {
+  color: #0061f2;
+  border-bottom-color: #0061f2;
+}
+.nav-borders .nav-link {
+  color: #69707a;
+  border-bottom-width: 0.125rem;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+} */
+
+
+
+
+
+/* test css dropdown profile */
+
+
+.navbar .nav-item i {
+	font-size: 18px;
+}
+.navbar .dropdown-item i {
+	font-size: 16px;
+	min-width: 22px;
+}
+.navbar .nav-item.open > a {
+	background: none !important;
+}
+.navbar .dropdown-menu {
+	border-radius: 1px;
+	border-color: #e5e5e5;
+	box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar .dropdown-menu a {
+	color: #777;
+	padding: 8px 20px;
+	line-height: normal;
+}
+.navbar .dropdown-menu a:hover, .navbar .dropdown-menu a:active {
+	color: #333;
+}	
+.navbar .dropdown-item .material-icons {
+	font-size: 21px;
+	line-height: 16px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+.navbar .badge {
+	color: #fff;
+	background: #f44336;
+	font-size: 11px;
+	border-radius: 20px;
+	position: absolute;
+	min-width: 10px;
+	padding: 4px 6px 0;
+	min-height: 18px;
+	top: 5px;
+}
+
+
+
+
+
+
