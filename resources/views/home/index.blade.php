@@ -85,50 +85,19 @@
                                          
                                         </li>
                                         <li><a href="{{route('home.product')}}">clothing </a>
-                                            <div class="mega-menu">
+                                            <div class="mega-menu" id="mega-menu-clothing">
                                                 <div class="mega-catagory">
-                                                    <h4><a href="#"><span>handbags</span></a></h4>
-                                                    <div class="mega-button">
-                                                        <a href="#"><span>Blouses And Shirts</span></a>
-                                                        <a href="#"><span>Clutches</span></a>
-                                                        <a href="#"><span>Cross Body</span></a>
-                                                        <a href="#"><span>Satchels</span></a>
-                                                        <a href="#"><span>Shoulder</span></a>
-                                                        <a href="#"><span>Toter</span></a>
-                                                    </div>
+                                                    <h4><a href="#"><span>Handbags</span></a></h4>
+                                                    
+                                                </div>
+                                                
+                                                <div class="mega-catagory">
+                                                    <h4><a href="#"><span>Dresses</span></a></h4>
+                                                   
                                                 </div>
                                                 <div class="mega-catagory">
-                                                    <h4><a href="#"><span>tops</span></a></h4>
-                                                    <div class="mega-button">
-                                                        <a href="#"><span>Evening</span></a>
-                                                        <a href="#"><span>Long Sleeved</span></a>
-                                                        <a href="#"><span>Shrot Sleeved</span></a>
-                                                        <a href="#"><span>Sleeveless</span></a>
-                                                        <a href="#"><span>T-Shirts</span></a>
-                                                        <a href="#"><span>Tanks And Camis</span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="mega-catagory">
-                                                    <h4><a href="#"><span>dresses</span></a></h4>
-                                                    <div class="mega-button">
-                                                        <a href="#"><span>Belts</span></a>
-                                                        <a href="#"><span>Cocktail</span></a>
-                                                        <a href="#"><span>Day</span></a>
-                                                        <a href="#"><span>Evening</span></a>
-                                                        <a href="#"><span>Sundresses</span></a>
-                                                        <a href="#"><span>Sweater</span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="mega-catagory">
-                                                    <h4><a href="#"><span>accessories</span></a></h4>
-                                                    <div class="mega-button">
-                                                        <a href="#"><span>Bras</span></a>
-                                                        <a href="#"><span>Hair Accessories</span></a>
-                                                        <a href="#"><span>Hats And Gloves</span></a>
-                                                        <a href="#"><span>Lifestyle</span></a>
-                                                        <a href="#"><span>Scarves</span></a>
-                                                        <a href="#"><span>Small Leathers</span></a>
-                                                    </div>
+                                                    <h4><a href="#"><span>Shoes</span></a></h4>
+                                                   
                                                 </div>
                                             </div>
                                         </li>
@@ -224,42 +193,14 @@
                                         <li><a href="#">clothing </a>
                                             <ul>
                                                 <li><a href="#">handbags</a>
-                                                    <ul>
-                                                        <li><a href="#">Blouses And Shirts</a></li>
-                                                        <li><a href="#">Clutches</a></li>
-                                                        <li><a href="#">Cross Body</a></li>
-                                                        <li><a href="#">Satchels</a></li>
-                                                        <li><a href="#">Shoulder</a></li>
-                                                        <li><a href="#">Toter</a></li>
-                                                    </ul>
+                                                    
                                                 </li>
-                                                <li><a href="#">tops</a>
-                                                    <ul>
-                                                        <li><a href="#">Evening</a></li>
-                                                        <li><a href="#">Long Sleeved</a></li>
-                                                        <li><a href="#">Shrot Sleeved</a></li>
-                                                        <li><a href="#">Sleeveless</a></li>
-                                                        <li><a href="#">T-Shirts</a></li>
-                                                        <li><a href="#">Tanks And Camis</a></li>
-                                                    </ul>
-                                                </li>
+                                               
                                                 <li><a href="#">dresses</a>
-                                                    <ul>
-                                                        <li><a href="#">Belts</a></li>
-                                                        <li><a href="#">Cocktail</a></li>
-                                                        <li><a href="#">Day</a></li>
-                                                        <li><a href="#">kids</a></li>
-                                                        <li><a href="#">Evening</a></li>
-                                                    </ul>
+                                                  
                                                 </li>
-                                                <li><a href="#">accessories</a>
-                                                    <ul>
-                                                        <li><a href="#">Bras</a></li>
-                                                        <li><a href="#">Hair Accessories</a></li>
-                                                        <li><a href="#">Hats And Gloves</a></li>
-                                                        <li><a href="#">Lifestyle</a></li>
-                                                        <li><a href="#">Scarves</a></li>
-                                                    </ul>
+                                                <li><a href="#">Shoes</a>
+                                                    
                                                 </li>
                                             </ul>
                                         </li>
@@ -395,9 +336,8 @@
                     <div class="col-md-12">
                         <div class="tab-button">   
                             <div class="list-group tab-top" id="list-tab" role="tablist">
-                              <a class="list-item active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">latest</a>
-                              <a class="list-item" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">bestseller</a>
-                              <a class="list-item" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">sale</a>
+                              <a class="list-item active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">New Colthes</a>
+                              
                             </div>
                         </div>
                     </div>
@@ -406,48 +346,23 @@
                           
                         <div class="tab-carousel-start owl-carousel">
                             <!--single product-->
-                                <div class="sin-product">
+                            @foreach($news_products as $np)
+                                <div class="sin-product-new">
+                                   
                                     <div class="product-top">
                                         <div class="pro-img">
                                             <a href="#">
-                                                <img class="image1" src="img/product/e1.jpg" alt="">
-                                                <img class="image2" src="img/product/e2.jpg" alt="">
+                                                <img class="image1" src="uploads/product/{{$np->image}}" alt="">
+                                                <img class="image2" src="uploads/product/{{$np->image}}" alt="">
+                                                
                                             </a>
                                         </div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/f1.jpg" alt="">
-                                                <img class="image2" src="img/product/f2.jpg" alt="">
-                                            </a>
-                                        </div>
+                                        @if($np->sale_price > 0)
                                         <div class="label_sale"><span>sale</span></div>
+                                        @endif
                                         <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
+                                    
+                                        <div class="name"><a href="#">{{$np->name}}</a></div>
                                         <div class="rating">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
@@ -456,835 +371,34 @@
                                             <i class="fa fa-star-o"></i>
                                         </div>
                                         <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
+                                            @if($np->sale_price>0)
+                                        <span class="price-old">${{number_format($np->price)}}</span> 
+                                        <span class="price-new">${{number_format($np->sale_price)}}</</span>
+                                            @else
+                                            <span class="price">${{number_format($np->price)}}</span>
+                                            @endif
                                         </div>
                                         <div class="button-group1">
                                             <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
                                             <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
                                         </div>
                                         <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
+                                            @if(auth('cus')->check())
+                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart" ></i> <a href="{{route('cart.add',$np->id)}}"> Add to Cart </a></button>
+                                            @else
+                                            
+                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart" ></i> <a href="{{route('account.login')}}" onclick="alert('Please log in to add cart !')">Add to Cart</a></button>
+
+                                            @endif
                                             <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
                                         </div>
+                                        
                                     </div>
+                                    
                                 </div>
                             <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/g1.jpg" alt="">
-                                                <img class="image2" src="img/product/g2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/h1.jpg" alt="">
-                                                <img class="image2" src="img/product/h2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/i1.jpg" alt="">
-                                                <img class="image2" src="img/product/i2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/j1.jpg" alt="">
-                                                <img class="image2" src="img/product/j2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/k1.jpg" alt="">
-                                                <img class="image2" src="img/product/k2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/l1.jpg" alt="">
-                                                <img class="image2" src="img/product/l2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/m1.jpg" alt="">
-                                                <img class="image2" src="img/product/m2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price"> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                      </div>
-                      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                          
-                        <div class="tab-carousel-start owl-carousel">
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/e1.jpg" alt="">
-                                                <img class="image2" src="img/product/e2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/f1.jpg" alt="">
-                                                <img class="image2" src="img/product/f2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/g1.jpg" alt="">
-                                                <img class="image2" src="img/product/g2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/h1.jpg" alt="">
-                                                <img class="image2" src="img/product/h2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/i1.jpg" alt="">
-                                                <img class="image2" src="img/product/i2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/j1.jpg" alt="">
-                                                <img class="image2" src="img/product/j2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/k1.jpg" alt="">
-                                                <img class="image2" src="img/product/k2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/l1.jpg" alt="">
-                                                <img class="image2" src="img/product/l2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/m1.jpg" alt="">
-                                                <img class="image2" src="img/product/m2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price"> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                      </div>
-                      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                          
-                        <div class="tab-carousel-start owl-carousel">
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/e1.jpg" alt="">
-                                                <img class="image2" src="img/product/e2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/f1.jpg" alt="">
-                                                <img class="image2" src="img/product/f2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/g1.jpg" alt="">
-                                                <img class="image2" src="img/product/g2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/h1.jpg" alt="">
-                                                <img class="image2" src="img/product/h2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/i1.jpg" alt="">
-                                                <img class="image2" src="img/product/i2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/j1.jpg" alt="">
-                                                <img class="image2" src="img/product/j2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/k1.jpg" alt="">
-                                                <img class="image2" src="img/product/k2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/l1.jpg" alt="">
-                                                <img class="image2" src="img/product/l2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_sale"><span>sale</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price">
-                                        <span class="price-old">$242.00</span> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!--single product-->
-                                <div class="sin-product">
-                                    <div class="product-top">
-                                        <div class="pro-img">
-                                            <a href="#">
-                                                <img class="image1" src="img/product/m1.jpg" alt="">
-                                                <img class="image2" src="img/product/m2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="label_new"><span>new</span></div>
-                                        <div class="name"><a href="#">Deliver Wide</a></div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="price"> 
-                                        <span class="price-new">$218.00</span>
-                                        </div>
-                                        <div class="button-group1">
-                                            <button title="Add to Wish List" data-bs-toggle="tooltip" type="button" class="btn-wishlist" ><i class="fa fa-heart"></i></button>
-                                            <button title="Compare this Product" data-bs-toggle="tooltip" type="button" class="btn-compare"><i class="fa fa-exchange"></i></button>
-                                        </div>
-                                        <div class="pro-bottom">
-                                            <button type="button" class="btn-add-card"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-                                            <button type="button" class="btn-quickview" data-bs-target="#productModal" data-bs-toggle="modal" ><i class="fa fa-search-plus"></i>Quick View</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                            @endforeach
+                        </div>
         <!--PRODUCT AREA END-->
         <!--BANNER AREA START-->
         <div class="banner-bottom">
@@ -3234,7 +2348,7 @@
         <script src="/js/jquery-price-slider.js"></script>		
 		<!-- meanmenu JS
 		============================================ -->		
-        <script src="/js/jquery.meanmenu.js"></script>
+        
 		<!-- owl.carousel JS
 		============================================ -->		
         <script src="/js/owl.carousel.min.js"></script>

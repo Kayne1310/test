@@ -12,8 +12,10 @@
     <link type="text/css" rel="stylesheet" href="/assets/fonts/flaticon/font/flaticon.css">
     <script src="https://kit.fontawesome.com/35e003e337.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="../../../../../css?family=Open+Sans:400,300,600,700,800%7CPoppins:400,500,700,800,900%7CRoboto:100,300,400,400i,500,700">
-    <link href="../../../../../css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" type="text/css" href="/css?family=Open+Sans:400,300,600,700,800%7CPoppins:400,500,700,800,900%7CRoboto:100,300,400,400i,500,700">
+    <link href="/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link type="text/css" rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" type="text/css" id="style_sheet" href="/assets/css/skins/default.css">

@@ -1,8 +1,39 @@
 @extends('master.main')
 @section('title','Home')
 @section('main')
-                                  
-            <!--MOBILE MENU START-->
+           
+
+
+<!--HEADER AREA END-->
+        <!--BREADCRUMB AREA START-->
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="hidden-xs col-sm-4 col-lg-4 d-none d-md-block">
+                        <div class="opening-time">
+                            <div class="icon"><i class="fa fa-clock-o"></i></div>
+                            <p><span class="opentime">OPENING TIME</span> <span class="time-top"> 8.00 AM - 10.00 PM</span></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-lg-4">
+                        <div class="logo">
+                            <a href="{{route('home.index')}}"><img src="/img/icon/Kayne.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-lg-4">
+                        <div class="input-group form-search" id="search">
+                           <input type="text" class="form-control" placeholder="search">
+                               <span class="input-group-btn">
+                                 <button class="btn btn-default button-search" type="button"><i class="fa fa-search"></i></button>
+                               </span>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--MOBILE MENU START-->
                 <div class="container">
                      <div class="row">
                          <div class="col-xs-12 col-sm-12 d-lg-none ">

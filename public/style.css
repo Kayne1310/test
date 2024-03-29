@@ -196,7 +196,8 @@ display: inline-block;
 font-weight: normal;
 padding-bottom: 11px;
 padding-left: 20px;
-padding-top: 11px;
+padding-top: 20px;
+font-size: 14px;
 }
 .top-bar-menu > ul > li > .dropdown-toggle:after{
   display: none;
@@ -257,7 +258,7 @@ float: left;
 height: 40px;
 line-height: 40px;
 padding-left: 15px;
-font-size: 16px;
+font-size: 14px;
 padding-top: 10px;
 }
 
@@ -412,11 +413,17 @@ border-bottom: 5px solid #E48080;
 float: left;
 margin-right: 2%;
 padding: 10px 0;
-width: 23%;
+width: 31%;
+}
+
+#mega-menu-clothing{
+  max-width: 550px !important;
+  
 }
 .mega-catagory h4 {
 text-transform: uppercase;
 z-index: 3001;
+
 }
 .sub-menu {
 background: #fff none repeat scroll 0 0;
@@ -719,6 +726,10 @@ padding: 5px;
 position: relative;
 text-align: center;
 }
+.sin-product-new{
+  padding-bottom: 58px;
+position: relative;
+}
 .pro-img .image1 {
 animation: 0.9s linear 0s normal none 1 running flipInY;
 display: block;
@@ -819,6 +830,11 @@ position: absolute;
 text-align: center;
 transition: all 0.3s ease 0s;
 width: 47%;
+}
+
+.btn-add-card a{
+  color: #fff;
+  text-transform: none;
 }
 .btn-quickview:hover,.btn-add-card:hover{background: #E48080}
 .btn-add-card {left: 5px;}
@@ -1748,17 +1764,18 @@ width: 89%;
 /*----------------------------------------*/
 
 .breadcrumb {
-background: #f1f1f1 none repeat scroll 0 0;
-color: #e48080;
-font-size: 14px;
-height: 50px;
-line-height: 50px;
-margin-top: 20px;
-padding: 0 15px;
-text-transform: capitalize;
-}
+  background: #f1f1f1 none repeat scroll 0 0;
+  color: #e48080;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 20px;
+  padding: 0 15px;
+  text-transform: capitalize;
+  }
 .breadcrumb li a {
 color: #999;
+
 }
 .breadcrumb > li::after {
 color: #999;
@@ -2273,6 +2290,9 @@ text-align: center;
 border: 1px solid #ddd;
 border-radius: 4px;
 padding: 5px;
+width: 100px;
+height: 100px;
+
 }
 .cart-pro-name {
 color: #444;
@@ -2318,6 +2338,25 @@ padding-top: 16px;}
 font-family: raleway;
 font-size: 27px;
 }
+
+#PlaceOrder {
+  margin-bottom: 70px;
+  color: white;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #000;
+  border: 0 solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#PlaceOrder:hover {
+  background-color: #e48080;
+}
+
+
 .panel-title a{
 color: #000;
 }

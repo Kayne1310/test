@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
@@ -34,6 +35,9 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
     Route::get('/',[AdminController::class,'index'])->name('admin.index');
     Route::get('/logout', [AdminController::class, 'logout'])->name('admin.logout');
     Route::get('/order', [OrderController::class, 'index'])->name('order.index');
+    Route::get('/order/detail/{order}', [OrderController::class, 'show'])->name('order.show');
+    Route::get('/order/update-status/{order}', [OrderController::class, 'update'])->name('order.update');
+
     
     Route::resource('category',CategoryController::class);
     Route::resource('product', ProductController::class);
@@ -78,4 +82,16 @@ Route::group(['prefix' => 'cart','middleware' => 'customer'], function() {
     Route::get('/delete/{product}', [CartController::class, 'delete'])->name('cart.delete');
     Route::get('/update/{product}', [CartController::class, 'update'])->name('cart.update');
     Route::get('/clear', [CartController::class, 'clear'])->name('cart.clear');
+});
+
+
+Route::group(['prefix' => 'order','middleware' => 'customer'], function() {
+
+    Route::get('/checkout', [CheckoutController::class, 'checkout'])->name('order.checkout');
+    Route::get('/history', [CheckoutController::class, 'history'])->name('order.history');
+    Route::get('/detail/{order}', [CheckoutController::class, 'detail'])->name('order.detail');
+    Route::post('/checkout', [CheckoutController::class, 'post_checkout']);
+
+    Route::get('/verify/{token}', [CheckoutController::class, 'verify'])->name('order.verify');
+
 });

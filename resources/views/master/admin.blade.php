@@ -95,12 +95,12 @@
           <a href="{{route('order.index')}}">
             <i class="fa fa-shopping-cart"></i> <span>Orders</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
-          {{-- <ul class="treeview-menu">
+          <ul class="treeview-menu">
             <li><a href="{{ route('order.index') }}"><i class="fa fa-circle-o"></i> List</a></li>
             <li><a href="{{ route('order.index') }}?status=0"><i class="fa fa-circle-o"></i> Chờ xác nhận</a></li>
             <li><a href="{{ route('order.index') }}?status=2"><i class="fa fa-circle-o"></i> Đã giao hàng</a></li>
             <li><a href="{{ route('order.index') }}?status=3"><i class="fa fa-circle-o"></i> Đã hủy</a></li>
-          </ul> --}}
+          </ul>
         </li>
 
 
@@ -143,9 +143,7 @@
             @yield('main')
         </div>
         <!-- /.box-body -->
-        <div class="box-footer">
-          Footer
-        </div>
+        
         <!-- /.box-footer-->
       </div>
       <!-- /.box -->
@@ -156,10 +154,8 @@
   <!-- /.content-wrapper -->
 
   <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 2.3.3
-    </div>
-    <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+   
+    <strong>Kayne &copy; 2024 <a href="https://facebook.com/ysbalaba">Kayne</a>.</strong> All rights
     reserved.
   </footer>
 </div>

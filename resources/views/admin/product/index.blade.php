@@ -26,6 +26,8 @@
             <th>Product Name</th>
             <th>Category</th>
             <th>Price</th>
+            <th>Sale Price</th>
+            <th>Status</th>
             <th>Image</th>
             <th></th>
         </tr>
@@ -36,7 +38,8 @@
             <td>{{ $loop->index + 1 }}</td>
             <td>{{ $model->name }}</td>
             <td>{{ $model->cat->name }}</td>
-            <td>{{ $model->price  }} <span class="label label-success">{{ $model->sale_price  }}</span></td>
+            <td>{{ $model->price  }} </td>
+            <td><span class="label label-success">{{ $model->sale_price  }}</span> </td>
             <td>{{ $model->status == 0 ? 'Hidden' : 'Publish' }}</td>
             <td>
                 <img src="uploads/product/{{ $model->image }}" width="40">

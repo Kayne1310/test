@@ -1,9 +1,36 @@
 @extends('master.main')
 @section('title','Home')
 @section('main')
-                  
 
-        
+
+
+
+<div class="header-middle">
+<div class="container">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-lg-4 d-none d-md-block">
+            <div class="opening-time">
+                <div class="icon"><i class="fa fa-clock-o"></i></div>
+                <p><span class="opentime">OPENING TIME</span> <span class="time-top"> 8.00 AM - 10.00 PM</span></p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-4">
+            <div class="logo">
+                <a href="{{route('home.index')}}"><img src="/img/icon/Kayne.png" alt=""></a>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-4">
+            <div class="input-group form-search" id="search">
+               <input type="text" class="form-control" placeholder="search">
+                   <span class="input-group-btn">
+                     <button class="btn btn-default button-search" type="button"><i class="fa fa-search"></i></button>
+                   </span>
+             </div>
+         </div>
+    </div>
+</div>
+</div>
+
         <!--BREADCRUMB AREA START-->
         <div class="bread-crumb">
             <div class="container">
@@ -29,6 +56,7 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
+                                           
                                         <td>Image</td>
                                         <td>Product Name</td>
                                         <td>Model</td>
@@ -38,24 +66,31 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach ($carts as $item)
                                     <tr>
+                                        {{-- <td scope="row">{{ $loop->index + 1 }}</td> --}}
                                         <td class="cart-page-img">
-                                            <a href="#"><img src="img/product/cart-1.jpg" alt=""></a>
+                                            <a href="#"><img src="uploads/product/{{ $item->prod->image }}" alt=""></a>
                                         </td>
-                                        <td><a href="#" class="cart-pro-name">blandit blandit</a></td>
-                                        <td>Product 5</td>
+                                        <td><a href="#" class="cart-pro-name">{{ $item->prod->name }}</a></td>
+                                        <td>{{ $item->prod->cat->name }}</td>
                                         <td>
-                                            <div class="input-group btn-block">
-                                                <input type="text" class="form-control" size="1" value="2" name="quantity[170]">
-                                                <span class="input-group-btn">
-                                                    <button class="btn btn-primary" title="" data-bs-toggle="tooltip" type="submit" data-original-title="Update"><i class="fa fa-refresh"></i></button>
-                                                <button onclick="cart.remove('170');" class="btn btn-danger" title="" data-bs-toggle="tooltip" type="button" data-original-title="Remove"><i class="fa fa-times-circle"></i></button>
+
+                                            <form action="{{route('cart.update',$item->product_id)}}" method="GET">
+                                                <div class="input-group btn-block">
+                                                    <input type="text" class="form-control" size="1" value="{{$item->quantity}}" name="quantity">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-primary" title="" data-bs-toggle="tooltip" type="submit" data-original-title="Update"><i class="fa fa-refresh"></i></button>
+                                                    </form >
+                                                
+                                                <a class="btn btn-danger" title="Xóa sản phẩm khỏi giỏ hàng" onclick="return confirm('Are you sure wanto delete product?')" href="{{ route('cart.delete', $item->product_id) }}"><i class="fa fa-times-circle"></i></a>
                                                 </span>
                                             </div>
                                         </td>
-                                        <td class="cart-price">$80.00</td>
-                                        <td class="cart-price">$80.00</td>
+                                        <td class="cart-price">${{ $item->price }}</</td>
+                                        <td class="cart-price">${{($item->price)*($item->quantity)}}</td>
                                     </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                             </div>
@@ -100,43 +135,7 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Estimate Shipping & Taxes <i class="fa fa-caret-down"></i>
-                                    </button>
-                                  </h2>
-                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Enter your destination to get a shipping estimate.</p>
-                                        <label  class="control-label"><span class="required">*</span>Country</label>
-                                        <select class="form-control">
-                                            <option value=""> --- Please Select --- </option>
-                                            <option value="244">Aaland Islands</option>
-                                            <option>Afghanistan</option>
-                                            <option>Albania</option>
-                                            <option>Algeria</option>
-                                            <option>American Samoa</option>
-                                            <option>Andorra</option>
-                                        </select>
-                                       <label  class="control-label"><span class="required">*</span>Region / State</label>
-                                        <select class="form-control">
-                                            <option value=""> --- Please Select --- </option>
-                                            <option value="244">Aaland Islands</option>
-                                            <option>Afghanistan</option>
-                                            <option>Albania</option>
-                                            <option>Algeria</option>
-                                            <option>American Samoa</option>
-                                            <option>Andorra</option>
-                                        </select>
-                                        <label class="control-label"><span class="required">*</span>Post Code</label>
-                                        <input type="text" class="form-control mb-30px"  placeholder="Enter your coupon here" value="" name="coupon">
-                                        <p class="form-submit">
-                                            <input type="submit" name="submit"  class="btn btn-primary submit" value="Post Comment">
-                                        </p>
-                                    </div>
-                                  </div>
-                                </div>
+                                
                             </div>
                             <div class="cart-bottom-total">
                                 <div class="table-total  col-md-4 offset-md-8 no-padding">
@@ -144,21 +143,25 @@
                                     <tbody>
                                         <tr>
                                           <td class="text-right"><strong>Sub-Total:</strong></td>
-                                          <td class="text-right">$100.00</td>
+                                          
+                                          <td class="text-right">${{ $totalPrice }}</td>
                                         </tr>
                                         <tr>
                                           <td class="text-right"><strong>Total:</strong></td>
-                                          <td class="text-right">$100.00</td>
+                                          <td class="text-right">${{$totalPrice}}</td>
                                         </tr>
                                     </tbody>
                                     </table>
                                     
                                 </div>
                                 <p class="form-submit">
-								    <input type="submit"   class="btn btn-primary submit pull-right" value="Checkout">
+								   <a href="{{route('order.checkout')}}" class="btn btn-primary submit pull-right" value="Checkout">Check Out </a>
+                                    
 								</p>
                                 <p class="form-submit">
-                                    <input type="submit" class="btn btn-primary continue-shopping pull-left" value="Continue Shoping">
+                                    
+                                    <a href="{{route('home.index')}}" class="btn btn-primary continue-shopping pull-left" > Continue Shopping</a>
+                                    
                                 </p>
                             </div>
                         </div>
@@ -177,7 +180,7 @@
                                         </a>
                                     </div>
                                     <div class="label_new"><span>new</span></div>
-                                    <div class="name"><a href="#">Deliver Wide</a></div>
+                                    <div class="name"><a href="#">Kayne</a></div>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -199,7 +202,7 @@
                                         </a>
                                     </div>
                                     <div class="label_new"><span>new</span></div>
-                                    <div class="name"><a href="#">Deliver Wide</a></div>
+                                    <div class="name"><a href="#">Kayne</a></div>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -221,7 +224,7 @@
                                         </a>
                                     </div>
                                     <div class="label_new"><span>new</span></div>
-                                    <div class="name"><a href="#">Deliver Wide</a></div>
+                                    <div class="name"><a href="#">Kayne</a></div>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -243,7 +246,7 @@
                                         </a>
                                     </div>
                                     <div class="label_new"><span>new</span></div>
-                                    <div class="name"><a href="#">Deliver Wide</a></div>
+                                    <div class="name"><a href="#">Kayne</a></div>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -265,7 +268,7 @@
                                         </a>
                                     </div>
                                     <div class="label_new"><span>new</span></div>
-                                    <div class="name"><a href="#">Deliver Wide</a></div>
+                                    <div class="name"><a href="#">Kayne</a></div>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>

@@ -11,20 +11,31 @@
             <div class="form-group">
                 <label for="">Product name</label>
                 <input type="text" name="name" class="form-control" id="" placeholder="Input field">
+                @error('name')
+                    <small class="help-block">{{ $message }}</small>
+                 @enderror 
             </div>
 
             <div class="form-group">
                 <label for="">Product Desscription</label>
                 <textarea name="description" class="form-control description" placeholder="Product content"></textarea>
+                @error('description')
+                    <small class="help-block">{{ $message }}</small>
+                 @enderror 
             </div>
 
             <div class="form-group">
                 <label for="">Product other Image</label>
                 <input type="file" name="other_img[]" class="form-control" multiple onchange="showOtherImage(this)">
+
                 <hr>
                 <div class="row" id="show_other_img">
+                    @error('other_img[]')
+                    <small class="help-block">{{ $message }}</small>
+                    @enderror   
 
                 </div>
+                
             </div>
         </div>
         <div class="col-md-3">
@@ -38,15 +49,25 @@
                     @endforeach
 
                 </select>
+                @error('category_id')
+                    <small class="help-block">{{ $message }}</small>
+                 @enderror 
             </div>
             <div class="form-group">
                 <label for="">Product price</label>
                 <input type="text" name="price" class="form-control" id="" placeholder="Input field">
+                @error('price')
+                    <small class="help-block">{{ $message }}</small>
+                 @enderror 
+                    
             </div>
 
             <div class="form-group">
                 <label for="">Product sale price</label>
                 <input type="text" name="sale_price" class="form-control" id="" placeholder="Input field">
+                @error('sale_price')
+                    <small class="help-block">{{ $message }}</small>
+                 @enderror 
             </div>
 
             <div class="form-group">
@@ -57,6 +78,7 @@
                         <input type="radio" name="status" value="1" />
                         Publish
                     </label>
+                    
                 </div>
 
                 <div class="radio">
@@ -65,11 +87,14 @@
                         Hidden
                     </label>
                 </div>
-            </div>
+                
             <div class="form-group">
                 <label for="">Product Image</label>
                 <input type="file" name="img" class="form-control" onchange="showImage(this)">
                 <img src="" id="show_img" alt="" width="100%">
+                @error('img')
+                    <small class="help-block">{{ $message }}</small>
+                 @enderror 
             </div>
             <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save</button>
         </div>
