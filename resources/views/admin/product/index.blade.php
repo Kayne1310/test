@@ -59,5 +59,5 @@
     </tbody>
 </table>
 
-
+{{ $data->links() }}
 @stop()

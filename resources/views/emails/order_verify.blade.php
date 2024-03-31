@@ -355,7 +355,7 @@ ul.social li{
     </table>
 	      </tr><!-- end tr -->
           <p>
-            <a class="hero bg_white" {{ route('order.verify', $token) }}" style="display: inline-block; padding: 7px 25px; color: #fff; background: darkblue">Click here to verify order</a>
+            <a class="hero bg_white" href="{{ route('order.verify', $token) }}"  style="display: inline-block; padding: 7px 25px; color: #fff; background: darkblue">Click here to verify order</a>
         </p>
 
         </td>

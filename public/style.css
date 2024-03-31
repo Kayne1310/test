@@ -583,6 +583,8 @@ visibility: visible;}
 display: inline-block;
 float: left;
 overflow: hidden;
+width: 100px;
+height: 100px;
 }
 .single-cart {
 display: block;
@@ -1536,6 +1538,7 @@ padding-bottom: 3px;
 background: #fff none repeat scroll 0 0;
 border: 1px solid #f1f1f1;
 }
+
 .home-two-wrapper .order-area {
 margin-bottom: 29px;
 margin-top: 22px;
@@ -2355,7 +2358,10 @@ font-size: 27px;
 #PlaceOrder:hover {
   background-color: #e48080;
 }
-
+#continue_shopping{
+  margin-bottom: 70px;
+  
+}
 
 .panel-title a{
 color: #000;

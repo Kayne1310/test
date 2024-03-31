@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[HomeController::class,'index'])->name('home.index');
 Route::get('/contact', [HomeController::class, 'contact'])->name('home.contact');
 Route::get('/product', [HomeController::class, 'product'])->name('home.product');
+Route::get('/blog', [HomeController::class, 'blog'])->name('home.blog');
 
 
 //route den trang admin 

@@ -40,116 +40,20 @@
                             <div class="mobile-menu">
                                 <nav class="mobile-menu-start">
                                     <ul>
-                                        <li><a href="#">Home</a>
-                                            <ul>
-                                                <li><a href="index.html">Home page 1</a></li>
-                                                <li><a href="index-2.html">Home page 2</a></li>
-                                                <li><a href="index-3.html">Home page 3</a></li>
-                                                <li><a href="index-4.html">Home page 4</a></li>
-                                            </ul>
+                                        <li><a href="{{route('home.index')}}">Home</a>
+                                           
                                         </li>
-                                        <li><a href="#">clothing </a>
-                                            <ul>
-                                                <li><a href="#">handbags</a>
-                                                    <ul>
-                                                        <li><a href="#">Blouses And Shirts</a></li>
-                                                        <li><a href="#">Clutches</a></li>
-                                                        <li><a href="#">Cross Body</a></li>
-                                                        <li><a href="#">Satchels</a></li>
-                                                        <li><a href="#">Shoulder</a></li>
-                                                        <li><a href="#">Toter</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">tops</a>
-                                                    <ul>
-                                                        <li><a href="#">Evening</a></li>
-                                                        <li><a href="#">Long Sleeved</a></li>
-                                                        <li><a href="#">Shrot Sleeved</a></li>
-                                                        <li><a href="#">Sleeveless</a></li>
-                                                        <li><a href="#">T-Shirts</a></li>
-                                                        <li><a href="#">Tanks And Camis</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">dresses</a>
-                                                    <ul>
-                                                        <li><a href="#">Belts</a></li>
-                                                        <li><a href="#">Cocktail</a></li>
-                                                        <li><a href="#">Day</a></li>
-                                                        <li><a href="#">kids</a></li>
-                                                        <li><a href="#">Evening</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">accessories</a>
-                                                    <ul>
-                                                        <li><a href="#">Bras</a></li>
-                                                        <li><a href="#">Hair Accessories</a></li>
-                                                        <li><a href="#">Hats And Gloves</a></li>
-                                                        <li><a href="#">Lifestyle</a></li>
-                                                        <li><a href="#">Scarves</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                        <li><a href="{{route('home.product')}}">clothing </a>
+                                            
                                         </li>
-                                        <li><a href="shop.html">Equipments</a>
-                                            <ul>
-                                                <li><a href="#">bags</a>
-                                                    <ul>
-                                                        <li><a href="#">Blazers</a></li>
-                                                        <li><a href="#">Bootees Bags</a></li>
-                                                        <li><a href="#">Jackets</a></li>
-                                                        <li><a href="#">Shoes</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">clothing</a>
-                                                    <ul>
-                                                        <li><a href="#">Blazers</a></li>
-                                                        <li><a href="#">Coats & Jackets </a></li>
-                                                        <li><a href="#">Jackets</a></li>
-                                                        <li><a href="#">Raincoats</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Lingerie</a>
-                                                    <ul>
-                                                        <li><a href="#">Briefs</a></li>
-                                                        <li><a href="#">Cocktail</a></li>
-                                                        <li><a href="#">Day</a></li>
-                                                        <li><a href="#">Evening</a></li>
-                                                        <li><a href="#">Sundresses</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">shoes</a>
-                                                    <ul>
-                                                        <li><a href="#">Ankle Boots </a></li>
-                                                        <li><a href="#">Clog sandals </a></li>
-                                                        <li><a href="#">Hats And Gloves</a></li>
-                                                        <li><a href="#">Footwear</a></li>
-                                                        <li><a href="#">Scarves</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                        <li><a href="{{route('home.product')}}">Equipments</a>
+                                           
                                         </li>
-                                        <li><a href="#">blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-post.html">single post</a></li>
-                                            </ul>
+                                        <li><a href="{{route('home.blog')}}">blog</a>
+                                            
                                         </li>
-                                        <li><a href="#">pages</a>
-                                            <ul>
-                                                <li><a href="about.html">about us</a></li>
-                                                <li><a href="account.html">account</a></li>
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="cart.html">cart</a></li>
-                                                <li><a href="checkout.html">checkout</a></li>
-                                                <li><a href="contact.html">contact us</a></li>
-                                                <li><a href="shop.html">shop grid</a></li>
-                                                <li><a href="shop-list.html">shop list</a></li>
-                                                <li><a href="product.html">single product</a></li>
-                                                <li><a href="single-post.html">single post</a></li>
-                                                <li><a href="wishlist.html">wishlist</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">contact us</a></li>
+                                        
+                                        <li><a href="{{route('home.contact')}}">contact us</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -166,7 +70,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="breadcrumb">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="{{route('home.index')}}">Home</a></li>
                             <li>Clothing</li>
                         </ul>
                     </div>

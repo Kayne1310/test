@@ -39,119 +39,17 @@
                              <li><a href="{{route('home.index')}}">home </a>
                                 
                              </li>
-                             <li><a href="shop.html">clothing </a>
-                                 <div class="mega-menu">
-                                     <div class="mega-catagory">
-                                         <h4><a href="#"><span>handbags</span></a></h4>
-                                         <div class="mega-button">
-                                             <a href="#"><span>Blouses And Shirts</span></a>
-                                             <a href="#"><span>Clutches</span></a>
-                                             <a href="#"><span>Cross Body</span></a>
-                                             <a href="#"><span>Satchels</span></a>
-                                             <a href="#"><span>Shoulder</span></a>
-                                             <a href="#"><span>Toter</span></a>
-                                         </div>
-                                     </div>
-                                     <div class="mega-catagory">
-                                         <h4><a href="#"><span>tops</span></a></h4>
-                                         <div class="mega-button">
-                                             <a href="#"><span>Evening</span></a>
-                                             <a href="#"><span>Long Sleeved</span></a>
-                                             <a href="#"><span>Shrot Sleeved</span></a>
-                                             <a href="#"><span>Sleeveless</span></a>
-                                             <a href="#"><span>T-Shirts</span></a>
-                                             <a href="#"><span>Tanks And Camis</span></a>
-                                         </div>
-                                     </div>
-                                     <div class="mega-catagory">
-                                         <h4><a href="#"><span>dresses</span></a></h4>
-                                         <div class="mega-button">
-                                             <a href="#"><span>Belts</span></a>
-                                             <a href="#"><span>Cocktail</span></a>
-                                             <a href="#"><span>Day</span></a>
-                                             <a href="#"><span>Evening</span></a>
-                                             <a href="#"><span>Sundresses</span></a>
-                                             <a href="#"><span>Sweater</span></a>
-                                         </div>
-                                     </div>
-                                     <div class="mega-catagory">
-                                         <h4><a href="#"><span>accessories</span></a></h4>
-                                         <div class="mega-button">
-                                             <a href="#"><span>Bras</span></a>
-                                             <a href="#"><span>Hair Accessories</span></a>
-                                             <a href="#"><span>Hats And Gloves</span></a>
-                                             <a href="#"><span>Lifestyle</span></a>
-                                             <a href="#"><span>Scarves</span></a>
-                                             <a href="#"><span>Small Leathers</span></a>
-                                         </div>
-                                     </div>
-                                 </div>
+                             <li><a href="{{route('home.product')}}">clothing </a>
+                                   
                              </li>
-                             <li><a href="shop.html">Equipments</a>
-                                 <div class="mega-menu">
-                                     <div class="mega-catagory">
-                                         <h4><a href="#"><span>bags</span></a></h4>
-                                         <div class="mega-button">
-                                             <a href="#"><span>Blazers</span></a>
-                                             <a href="#"><span>Bootees Bags</span></a>
-                                             <a href="#"><span>Jackets</span></a>
-                                             <a href="#"><span>Shoes</span></a>
-                                         </div>
-                                     </div>
-                                     <div class="mega-catagory">
-                                         <h4><a href="#"><span>clothing</span></a></h4>
-                                         <div class="mega-button">
-                                             <a href="#"><span>Blazers</span></a>
-                                             <a href="#"><span>Coats & Jackets </span></a>
-                                             <a href="#"><span>Jackets</span></a>
-                                             <a href="#"><span>Raincoats</span></a>
-                                         </div>
-                                     </div>
-                                     <div class="mega-catagory">
-                                         <h4><a href="#"><span>Lingerie</span></a></h4>
-                                         <div class="mega-button">
-                                             <a href="#"><span>Briefs</span></a>
-                                             <a href="#"><span>Cocktail</span></a>
-                                             <a href="#"><span>Day</span></a>
-                                             <a href="#"><span>Evening</span></a>
-                                             <a href="#"><span>Sundresses</span></a>
-                                         </div>
-                                     </div>
-                                     <div class="mega-catagory">
-                                         <h4><a href="#"><span>shoes</span></a></h4>
-                                         <div class="mega-button">
-                                             <a href="#"><span>Ankle Boots </span></a>
-                                             <a href="#"><span>Clog sandals </span></a>
-                                             <a href="#"><span>Hats And Gloves</span></a>
-                                             <a href="#"><span>Footwear</span></a>
-                                             <a href="#"><span>Scarves</span></a>
-                                         </div>
-                                     </div>
-                                 </div>
-                             
+                             <li><a href="{{route('home.product')}}">Equipments</a>
+                                 
                              </li>
-                             <li><a href="#">blog</a>
-                                 <ul class="sub-menu">
-                                     <li><a href="blog.html">blog</a></li>
-                                     <li><a href="single-post.html">single post</a></li>
-                                 </ul>
+                             <li><a href="{{route('home.blog')}}">blog</a>
+                                 <
                              </li>
-                             <li><a href="#">pages</a> 
-                                 <ul class="sub-menu">
-                                     <li><a href="about.html">about us</a></li>
-                                     <li><a href="account.html">account</a></li>
-                                     <li><a href="blog.html">blog</a></li>
-                                     <li><a href="cart.html">cart</a></li>
-                                     <li><a href="checkout.html">checkout</a></li>
-                                     <li><a href="contact.html">contact us</a></li>
-                                     <li><a href="shop.html">shop grid</a></li>
-                                     <li><a href="shop-list.html">shop list</a></li>
-                                     <li><a href="product.html">single product</a></li>
-                                     <li><a href="single-post.html">single post</a></li>
-                                     <li><a href="wishlist.html">wishlist</a></li>
-                                 </ul>
-                             </li>
-                             <li class="active"><a href="contact.html">contact us</a></li>
+                            
+                             <li class="active"><a href="#">contact us</a></li>
                          </ul>
                      </nav>
                  </div>  
@@ -219,114 +117,16 @@
                      <nav class="mobile-menu-start">
                          <ul>
                              <li><a href="#">Home</a>
-                                 <ul>
-                                     <li><a href="index.html">Home page 1</a></li>
-                                     <li><a href="index-2.html">Home page 2</a></li>
-                                     <li><a href="index-3.html">Home page 3</a></li>
-                                     <li><a href="index-4.html">Home page 4</a></li>
-                                 </ul>
+                                 
                              </li>
                              <li><a href="#">clothing </a>
-                                 <ul>
-                                     <li><a href="#">handbags</a>
-                                         <ul>
-                                             <li><a href="#">Blouses And Shirts</a></li>
-                                             <li><a href="#">Clutches</a></li>
-                                             <li><a href="#">Cross Body</a></li>
-                                             <li><a href="#">Satchels</a></li>
-                                             <li><a href="#">Shoulder</a></li>
-                                             <li><a href="#">Toter</a></li>
-                                         </ul>
-                                     </li>
-                                     <li><a href="#">tops</a>
-                                         <ul>
-                                             <li><a href="#">Evening</a></li>
-                                             <li><a href="#">Long Sleeved</a></li>
-                                             <li><a href="#">Shrot Sleeved</a></li>
-                                             <li><a href="#">Sleeveless</a></li>
-                                             <li><a href="#">T-Shirts</a></li>
-                                             <li><a href="#">Tanks And Camis</a></li>
-                                         </ul>
-                                     </li>
-                                     <li><a href="#">dresses</a>
-                                         <ul>
-                                             <li><a href="#">Belts</a></li>
-                                             <li><a href="#">Cocktail</a></li>
-                                             <li><a href="#">Day</a></li>
-                                             <li><a href="#">kids</a></li>
-                                             <li><a href="#">Evening</a></li>
-                                         </ul>
-                                     </li>
-                                     <li><a href="#">accessories</a>
-                                         <ul>
-                                             <li><a href="#">Bras</a></li>
-                                             <li><a href="#">Hair Accessories</a></li>
-                                             <li><a href="#">Hats And Gloves</a></li>
-                                             <li><a href="#">Lifestyle</a></li>
-                                             <li><a href="#">Scarves</a></li>
-                                         </ul>
-                                     </li>
-                                 </ul>
+                                 
                              </li>
                              <li><a href="shop.html">Equipments</a>
-                                 <ul>
-                                     <li><a href="#">bags</a>
-                                         <ul>
-                                             <li><a href="#">Blazers</a></li>
-                                             <li><a href="#">Bootees Bags</a></li>
-                                             <li><a href="#">Jackets</a></li>
-                                             <li><a href="#">Shoes</a></li>
-                                         </ul>
-                                     </li>
-                                     <li><a href="#">clothing</a>
-                                         <ul>
-                                             <li><a href="#">Blazers</a></li>
-                                             <li><a href="#">Coats & Jackets </a></li>
-                                             <li><a href="#">Jackets</a></li>
-                                             <li><a href="#">Raincoats</a></li>
-                                         </ul>
-                                     </li>
-                                     <li><a href="#">Lingerie</a>
-                                         <ul>
-                                             <li><a href="#">Briefs</a></li>
-                                             <li><a href="#">Cocktail</a></li>
-                                             <li><a href="#">Day</a></li>
-                                             <li><a href="#">Evening</a></li>
-                                             <li><a href="#">Sundresses</a></li>
-                                         </ul>
-                                     </li>
-                                     <li><a href="#">shoes</a>
-                                         <ul>
-                                             <li><a href="#">Ankle Boots </a></li>
-                                             <li><a href="#">Clog sandals </a></li>
-                                             <li><a href="#">Hats And Gloves</a></li>
-                                             <li><a href="#">Footwear</a></li>
-                                             <li><a href="#">Scarves</a></li>
-                                         </ul>
-                                     </li>
-                                 </ul>
+                                
                              </li>
                              <li><a href="#">blog</a>
-                                 <ul>
-                                     <li><a href="blog.html">blog</a></li>
-                                     <li><a href="single-post.html">single post</a></li>
-                                 </ul>
-                             </li>
-                             <li><a href="#">pages</a>
-                                 <ul>
-                                     <li><a href="about.html">about us</a></li>
-                                     <li><a href="account.html">account</a></li>
-                                     <li><a href="blog.html">blog</a></li>
-                                     <li><a href="cart.html">cart</a></li>
-                                     <li><a href="checkout.html">checkout</a></li>
-                                     <li><a href="contact.html">contact us</a></li>
-                                     <li><a href="shop.html">shop grid</a></li>
-                                     <li><a href="shop-list.html">shop list</a></li>
-                                     <li><a href="product.html">single product</a></li>
-                                     <li><a href="single-post.html">single post</a></li>
-                                     <li><a href="wishlist.html">wishlist</a></li>
-                                 </ul>
-                             </li>
+                             
                              <li><a href="contact.html">contact us</a></li>
                          </ul>
                      </nav>

@@ -20,52 +20,48 @@
                        </div>
                        <div class="col-xs-12 col-md-4 col-lg-4" >
                             <div class=" cart-area cart-style-two">
-                                <button class="btn dropdown-toggle" type="button" ><span id="cart-total"> <span><i class="fa fa-shopping-cart"></i> My Cart</span>2 item(s) - $244.00</span></button>
+                                                                <button class="btn dropdown-toggle" type="button" ><span id="cart-total"> <span><i class="fa fa-shopping-cart"></i> My Cart</span>{{$cartTotalItems}} item(s) - ${{$totalPrice}}</span></button>
+
                                 
                                 <div class="cart-drop">
+                                    @foreach ($carts as $item)
                                     <div class="single-cart">
+                                        
                                         <div class="cart-img">
-                                           <img alt="" src="img/product/cart-1.jpg">
+                                           <img alt="" src="/uploads/product/{{ $item->prod->image }}">
                                         </div>
                                         <div class="cart-title">
-                                            <p><a href="#">Aliquam Consequat</a></p>
+                                            <p><a href="#">{{ $item->prod->name }}</a></p>
                                         </div>
                                         <div class="cart-price">
-                                           <p>1 x $<span>500</span></p> 
+                                            <p>{{$item->quantity}} x $
+                                                @if($item->prod->sale_price > 0)
+                                                    <span>{{$item->prod->sale_price}}</span>
+                                                @else
+                                                    <span>{{$item->prod->price}}</span>
+                                                @endif
+                                            </p>
+                                            
                                         </div>
                                         <a href="#"><i class="fa fa-times"></i></a>
+                                        
                                     </div>
-                                    <div class="single-cart">
-                                        <div class="cart-img">
-                                           <img alt="" src="img/product/cart-2.jpg">
-                                           
-                                        </div>
-                                        <div class="cart-title">
-                                            <p><a href="#">Quisque In Arcuc</a></p>
-                                        </div>
-                                        <div class="cart-price">
-                                           <p>1 x $<span>200</span></p> 
-                                        </div>
-                                        <a href="#"><i class="fa fa-times"></i></a>
-                                    </div>
+                                    @endforeach
+                                    
                                     <div class="cart-bottom">
                                         <div class="cart-sub-total">
-                                            <p>Sub-Total <span>$700</span></p>
+                                            <p>Sub-Total <span>${{$totalPrice}}</span></p>
                                         </div>
+                                        
+                                        
                                         <div class="cart-sub-total">
-                                            <p>Eco Tax (-2.00)<span>$7.00</span></p>
-                                        </div>
-                                        <div class="cart-sub-total">
-                                            <p>VAT (20%) <span>$40.00</span></p>
-                                        </div>
-                                        <div class="cart-sub-total">
-                                            <p>Total <span>$244.00</span></p>
+                                            <p>Total <span>${{$totalPrice}}</span></p>
                                         </div>
                                         <div class="cart-checkout">
-                                            <a href="cart.html"><i class="fa fa-shopping-cart"></i>View Cart</a>
+                                            <a href="{{route('cart.index')}}"><i class="fa fa-shopping-cart"></i>View Cart</a>
                                         </div>
                                         <div class="cart-share">
-                                            <a href="checkout.html"><i class="fa fa-share"></i>Checkout</a>
+                                            <a href="{{route('order.checkout')}}"><i class="fa fa-share"></i>Checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -85,86 +81,16 @@
                                          
                                         </li>
                                         <li><a href="{{route('home.product')}}">clothing </a>
-                                            <div class="mega-menu" id="mega-menu-clothing">
-                                                <div class="mega-catagory">
-                                                    <h4><a href="#"><span>Handbags</span></a></h4>
-                                                    
-                                                </div>
-                                                
-                                                <div class="mega-catagory">
-                                                    <h4><a href="#"><span>Dresses</span></a></h4>
-                                                   
-                                                </div>
-                                                <div class="mega-catagory">
-                                                    <h4><a href="#"><span>Shoes</span></a></h4>
-                                                   
-                                                </div>
-                                            </div>
+                                            
+                                           
                                         </li>
-                                        <li><a href="shop.html">Equipments</a>
-                                            <div class="mega-menu">
-                                                <div class="mega-catagory">
-                                                    <h4><a href="#"><span>bags</span></a></h4>
-                                                    <div class="mega-button">
-                                                        <a href="#"><span>Blazers</span></a>
-                                                        <a href="#"><span>Bootees Bags</span></a>
-                                                        <a href="#"><span>Jackets</span></a>
-                                                        <a href="#"><span>Shoes</span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="mega-catagory">
-                                                    <h4><a href="#"><span>clothing</span></a></h4>
-                                                    <div class="mega-button">
-                                                        <a href="#"><span>Blazers</span></a>
-                                                        <a href="#"><span>Coats & Jackets </span></a>
-                                                        <a href="#"><span>Jackets</span></a>
-                                                        <a href="#"><span>Raincoats</span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="mega-catagory">
-                                                    <h4><a href="#"><span>Lingerie</span></a></h4>
-                                                    <div class="mega-button">
-                                                        <a href="#"><span>Briefs</span></a>
-                                                        <a href="#"><span>Cocktail</span></a>
-                                                        <a href="#"><span>Day</span></a>
-                                                        <a href="#"><span>Evening</span></a>
-                                                        <a href="#"><span>Sundresses</span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="mega-catagory">
-                                                    <h4><a href="#"><span>shoes</span></a></h4>
-                                                    <div class="mega-button">
-                                                        <a href="#"><span>Ankle Boots </span></a>
-                                                        <a href="#"><span>Clog sandals </span></a>
-                                                        <a href="#"><span>Hats And Gloves</span></a>
-                                                        <a href="#"><span>Footwear</span></a>
-                                                        <a href="#"><span>Scarves</span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <li><a href="{{route('home.product')}}">Equipments</a>
+                                            
 
                                         </li>
-                                        <li><a href="#">blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-post.html">single post</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">pages</a> 
-                                            <ul class="sub-menu">
-                                                <li><a href="about.html">about us</a></li>
-                                                <li><a href="account.html">account</a></li>
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="cart.html">cart</a></li>
-                                                <li><a href="checkout.html">checkout</a></li>
-                                                <li><a href="contact.html">contact us</a></li>
-                                                <li><a href="shop.html">shop grid</a></li>
-                                                <li><a href="shop-list.html">shop list</a></li>
-                                                <li><a href="product.html">single product</a></li>
-                                                <li><a href="single-post.html">single post</a></li>
-                                                <li><a href="wishlist.html">wishlist</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a href="{{route('home.blog')}}">blog</a>
+                                            
+                                        
                                         <li><a href="{{route('home.contact')}}">contact us</a></li>
                                     </ul>
                                 </nav>
@@ -205,42 +131,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="shop.html">Equipments</a>
-                                            <ul>
-                                                <li><a href="#">bags</a>
-                                                    <ul>
-                                                        <li><a href="#">Blazers</a></li>
-                                                        <li><a href="#">Bootees Bags</a></li>
-                                                        <li><a href="#">Jackets</a></li>
-                                                        <li><a href="#">Shoes</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">clothing</a>
-                                                    <ul>
-                                                        <li><a href="#">Blazers</a></li>
-                                                        <li><a href="#">Coats & Jackets </a></li>
-                                                        <li><a href="#">Jackets</a></li>
-                                                        <li><a href="#">Raincoats</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Lingerie</a>
-                                                    <ul>
-                                                        <li><a href="#">Briefs</a></li>
-                                                        <li><a href="#">Cocktail</a></li>
-                                                        <li><a href="#">Day</a></li>
-                                                        <li><a href="#">Evening</a></li>
-                                                        <li><a href="#">Sundresses</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">shoes</a>
-                                                    <ul>
-                                                        <li><a href="#">Ankle Boots </a></li>
-                                                        <li><a href="#">Clog sandals </a></li>
-                                                        <li><a href="#">Hats And Gloves</a></li>
-                                                        <li><a href="#">Footwear</a></li>
-                                                        <li><a href="#">Scarves</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                            
                                         </li>
                                         <li><a href="#">blog</a>
                                             <ul>

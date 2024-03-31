@@ -183,7 +183,7 @@
                              <div class="sin-footer">
                                  <h5>Accessories</h5>
                                  <div class="footer-conten">
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris</p>
+                                     <p>Kanye Shop offers cutting-edge fashion with a blend of urban flair and high-end sophistication. Our curated collections feature avant-garde designs, premium fabrics, and timeless style. From streetwear essentials to statement pieces, Kanye Shop caters to individuals seeking bold, fashion-forward looks that make a statement wherever they go.</p>
                                  </div>
                                  <div class="social-link ">
                                      <div class="single-social">
@@ -287,7 +287,9 @@
                             <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                         <div class="modal-body">
+                            
                             <div class="modal-product">
+                                
                                 <div class="product-images">
                                     <div class="main-image images">
                                         <img alt="" src="img/product/d1.jpg">
@@ -308,7 +310,7 @@
                                         </form>
                                     </div>
                                     <div class="quick-desc">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.
+                                        Kanye Shop offers cutting-edge fashion with a blend of urban flair and high-end sophistication. Our curated collections feature avant-garde designs, premium fabrics, and timeless style. From streetwear essentials to statement pieces, Kanye Shop caters to individuals seeking bold, fashion-forward looks that make a statement wherever they go.
                                     </div>
                                     <div class="social-sharing">
                                         <div class="widget widget_socialsharing_widget">
@@ -323,7 +325,9 @@
                                         </div>
                                     </div>
                                 </div><!-- .product-info -->
+                              
                             </div><!-- .modal-product -->
+                            
                         </div><!-- .modal-body -->
                     </div><!-- .modal-content -->
                 </div><!-- .modal-dialog -->
@@ -376,7 +380,7 @@
         @if(Session::has('ok'))
         <script>
             $.toast({
-                heading: 'Thông báo',
+                heading: 'Notification',
                 text: "{{ Session::get('ok') }}",
                 showHideTransition: 'slide',
                 icon: 'success',
@@ -390,7 +394,7 @@
         @if(Session::has('no'))
         <script>
             $.toast({
-                heading: 'Thông báo',
+                heading: 'Notification',
                 text: "{{ Session::get('no') }}",
                 showHideTransition: 'slide',
                 icon: 'error',

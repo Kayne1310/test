@@ -135,18 +135,8 @@ Create table carts
 INSERT INTO `products` (`name`, `image`, `price`, `sale_price`, `category_id`, `description`, `status`, `created_at`, `updated_at`) VALUES
 ('Product 2', 'CZrZOBXOYxU8xsdi69yU1gx2wOBl4JqJcCwaCZbh.jpg', 120000, 2500, 2, 'sasas', 1, '2024-03-27', '2024-03-27'),
 ('Product 3', 'Sny0tF1aPkyoNIOfYRERq0HGU42PQwst01LZos98.jpg', 50000, 2500, 2, 'sasas', 1, '2024-03-27', '2024-03-27'),
-('Product 4', 'yFB5KcR7ZjPus9mRV78CbDchuV6mzhnKwWUsQxRl.jpg', 5000, 2500, 2, 'sasas', 1, '2024-03-27', '2024-03-27');
+('Product 4', 'yFB5KcR7ZjPus9mRV78CbDchuV6mzhnKwWUsQxRl.jpg', 5000, 2500, 2, 'sasas', 1, '2024-03-27', '2024-03-27'),
 ('Product 6', 'j5poPIlTE9MmUTD8IARBw9XHEWi9NcYr5eRUOzSE.jpg', 50000, 250, 2, 'sasas', 1, '2024-03-27', '2024-03-27');
 
 
 
-Create table carts
-(
-    customer_id int NOT NULL,
-    product_id int NOT NULL,
-    price float(10,2) not null,
-    quantity int not null,
-    primary key (customer_id, product_id),
-    FOREIGN KEY (customer_id) REFERENCES customers(id),
-    FOREIGN KEY (product_id) REFERENCES products(id)
-);

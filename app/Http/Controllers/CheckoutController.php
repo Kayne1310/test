@@ -15,12 +15,18 @@ class CheckoutController extends Controller
     public function checkout() {
         $carts = Cart::where('customer_id', auth('cus')->id())->get();
         $auth = auth('cus')->user();
-        return view('home.checkout', compact('auth','carts'));
+        $totalPrice = 0; // Khởi tạo biến tổng giá
+        foreach ($carts as $item) {
+        $totalPrice += $item->price * $item->quantity;
+        }
+        return view('home.checkout', compact('auth','carts','totalPrice'));
     }
     public function history() {
         $auth = auth('cus')->user();
         $orders = Order::where('customer_id', auth('cus')->id())->get();
         $carts = Cart::where('customer_id', auth('cus')->id())->get();
+
+        
         return view('home.history', compact('auth','orders','carts'));
     }
     public function detail(Order $order) {

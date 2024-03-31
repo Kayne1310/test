@@ -35,7 +35,7 @@
                         <h1>Register </h1>
                     </div>
                     <p>
-                        Kanye Shop là một cửa hàng thời trang nổi tiếng với sự đa dạng và phong cách độc đáo trong việc cung cấp các sản phẩm thời trang chất lượng cao. Với một tầm nhìn đậm chất sáng tạo và cá nhân, Kanye Shop không chỉ là một địa chỉ mua sắm, mà còn là một trải nghiệm về phong cách và cá nhân hóa.</p>
+                        Kanye Shop offers cutting-edge fashion with a blend of urban flair and high-end sophistication. Our curated collections feature avant-garde designs, premium fabrics, and timeless style. From streetwear essentials to statement pieces, Kanye Shop caters to individuals seeking bold, fashion-forward looks that make a statement wherever they go.</p>
 
                     <div class="social-list">
                         <div class="buttons">

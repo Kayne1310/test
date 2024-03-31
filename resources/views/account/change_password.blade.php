@@ -60,9 +60,9 @@
                     <div class="col-xs-12 col-sm-3 col-md-3">
                        <div class="sidebar-menu">
                            <ul class="list-unstyled">
-                               <li><a href="#">My Account</a></li>
+                               <li><a href="{{route('account.profile')}}">My Account</a></li>
                                <li><a href="#">My Favorite</a></li>
-                               <li><a href="#">My Order</a></li>
+                               <li><a href="{{route('cart.index')}}">My Order</a></li>
                                <li><a href="#">Logout</a></li>
                                <li><a href="#">Change Password</a></li>
                               

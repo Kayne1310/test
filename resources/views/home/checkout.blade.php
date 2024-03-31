@@ -135,12 +135,12 @@
                                 <tfoot>
                                     <tr>
                                         <td class="text-right" colspan="4"><strong>Sub-Total:</strong></td>
-                                        <td class="text-right">$378.00</td>
+                                        <td class="text-right">${{$totalPrice}}</td>
                                     </tr>
                                    
                                     <tr>
                                         <td class="text-right" colspan="4"><strong>Total:</strong></td>
-                                        <td class="text-right">$383.00</td>
+                                        <td class="text-right">${{$totalPrice}}</td>
                                     </tr>
                                 </tfoot>
                             </table>
