@@ -1,10 +1,15 @@
-Start 
-:Update composer 
-composer updaet
-cai dat xampp mo mysql import sql
+Start  </br>
+Buoc 1 </br>
+Update composer  </br>
+
+composer update </br>
+Buoc 2 </br>
+cai dat xampp mo mysql import  file demo.sql </br>
 
 
-tao file .env  
+
+tao file .env  lay du lieu tu .env example
+
 sua ten dabase 
 
 tao key 
@@ -15,21 +20,20 @@ edit .env </br>
 
 nhap mail vao .env
 
-demo
-MAIL_MAILER=smtp
-MAIL_HOST=smtp.gmail.com
-MAIL_PORT=587
-MAIL_USERNAME=nhap gmail cua ban
-MAIL_PASSWORD=rxlstcsrnuuszvdd( day la mat ma ung dung)
-MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS=nhap ten email
-MAIL_FROM_NAME="${APP_NAME}"
+demo </br>
+MAIL_MAILER=smtp  </br>
+MAIL_HOST=smtp.gmail.com </br>
+ MAIL_PORT=587 </br>
+MAIL_USERNAME=nhap gmail cua ban </br>
+MAIL_PASSWORD=rxlstcsrnuuszvdd( day la mat ma ung dung) </br>
+MAIL_ENCRYPTION=tls  </br>
+MAIL_FROM_ADDRESS=nhap ten email </br>
+MAIL_FROM_NAME="${APP_NAME}" </br>
 
 
 
 
 php artisan serve
-
 
 
 
@@ -52,6 +56,10 @@ them sua xoa product
 
 xem thong tin order cua khach hang dat lai trang thai cho ordel detail
 
+
+Pass admin login 
+email admin@gmail.com
+pass:123456
 
 
 
