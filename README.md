@@ -1,10 +1,15 @@
 Start  </br>
 Buoc 1 </br>
 Update composer  </br>
+neu bi loi ko update composer duoc thi vao xampp </br>
+an config php.init </br> 
+Ctrol +F : tim extension=zip xoa dau ; dang truoc  </br>
+
 
 composer update </br>
 Buoc 2 </br>
 cai dat xampp mo mysql import  file demo.sql </br>
+
 
 
 
