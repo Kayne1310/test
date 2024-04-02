@@ -40,21 +40,21 @@ php artisan serve
 FEATURE
 
 ve user :
-Login (khi tao thanh cong se gui 1 email chuc mung tao thanh cong qua email)
-Register
-Change password
-Update Prodfile
-Add Product vao ro hang
-Dat hang check out (gui 1 email hoa don vao email)
+Login (khi tao thanh cong se gui 1 email chuc mung tao thanh cong qua email) </br>
+Register  </br>
+Change password   </br>
+Update Prodfile     </br>
+Add Product vao ro hang </br> 
+Dat hang check out (gui 1 email hoa don vao email)   </br>
 
-Forgot password(quen mat khau se gui 1 duong link vao email khi ng dung an vao se chuyen den form reset password)
+Forgot password(quen mat khau se gui 1 duong link vao email khi ng dung an vao se chuyen den form reset password)  </br>
 
 
-Ve admin
-login 
-them sua xoa product 
-
-xem thong tin order cua khach hang dat lai trang thai cho ordel detail
+Ve admin  
+login  </br>
+them sua xoa product    </br> 
+ 
+xem thong tin order cua khach hang dat lai trang thai cho ordel detail  </br>
 
 
 Pass admin login 
