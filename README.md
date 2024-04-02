@@ -11,8 +11,10 @@ tao key
 php artisan key:generate
  
 
-edit .env
+edit .env </br>
+
 nhap mail vao .env
+
 demo
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.gmail.com
