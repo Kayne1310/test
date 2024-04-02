@@ -64,14 +64,14 @@
                             @csrf
 
                             <div class="form-group form-box">
-                                <input type="name" name="name" class="form-control"  placeholder="Enter Name" aria-label="Enter Name">
+                                <input type="name" name="name" class="form-control"  placeholder="Enter Name" aria-label="Enter Name" required>
                                 @error('name')
                                 <small class="help-block">{{ $message }}</small>
                                 @enderror
                             </div>
 
                             <div class="form-group form-box">
-                                <input type="email" name="email" class="form-control" placeholder="Enter Your Email " aria-label="Enter Your Email">
+                                <input type="email" name="email" class="form-control" placeholder="Enter Your Email " aria-label="Enter Your Email" required>
                                 {{-- thong bao loi --}}
                                 @error('email')
                                  <small class="help-block">{{ $message }}</small>
@@ -81,7 +81,7 @@
                             </div>
 
                             <div class="form-group form-box">
-                                <input type="text" name="phone" class="form-control"  placeholder="Enter Your Phone" aria-label="Enter Your Phone">
+                                <input type="text" name="phone" class="form-control"  placeholder="Enter Your Phone" aria-label="Enter Your Phone" required>
                                 {{-- thong bao loi --}}
                                 @error('phone')
                                  <small class="help-block">{{ $message }}</small>
@@ -176,7 +176,7 @@
         @if(Session::has('ok'))
         <script>
             $.toast({
-                heading: 'Thông báo',
+                heading: 'Notificant',
                 text: "{{ Session::get('ok') }}",
                 showHideTransition: 'slide',
                 icon: 'success',
@@ -190,7 +190,7 @@
         @if(Session::has('no'))
         <script>
             $.toast({
-                heading: 'Thông báo',
+                heading: 'Notificant',
                 text: "{{ Session::get('no') }}",
                 showHideTransition: 'slide',
                 icon: 'error',

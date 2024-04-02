@@ -65,9 +65,10 @@ class AccountController extends Controller
             'email' => 'required|email|min:6|max:100|unique:customers',
             'password' => 'required|min:4',
             'confirm_password' => 'required|same:password',
+            'phone'=>'required',
         ], [
-            'name.required' => 'Họ tên không được để tróng',
-            'name.min' => 'Họ ten tối thiểu là 6 ký tự'
+            'name.required' => 'User name not null',
+            'name.min' => 'User name minimum 6 characters'
         ]);
 
         $data = $req->only('name','email','phone','address','gender');

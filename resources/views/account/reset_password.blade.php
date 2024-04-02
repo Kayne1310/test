@@ -3,7 +3,7 @@
 <html lang="zxx">
 <head>
     
-    <title>Crimson Login Form HTML Template V3</title>
+    <title> Reset Password</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
@@ -32,7 +32,7 @@
             <div class="col-lg-6 col-md-12 bg-img">
                 <div class="informeson">
                     <div class="typing">
-                        <h1>Forgot Password </h1>
+                        <h1>Reset Password </h1>
                     </div>
                     <p>
                         Kanye Shop là một cửa hàng thời trang nổi tiếng với sự đa dạng và phong cách độc đáo trong việc cung cấp các sản phẩm thời trang chất lượng cao. Với một tầm nhìn đậm chất sáng tạo và cá nhân, Kanye Shop không chỉ là một địa chỉ mua sắm, mà còn là một trải nghiệm về phong cách và cá nhân hóa.</p>
@@ -57,7 +57,7 @@
                         <a href="{{route('home.index')}}" style="font-size: 70px; color: rgb(123,28,51);">
                             Kayne Shop
                         </a>
-                        <h3>Forgot Password</h3>
+                        <h3>Reset Password</h3>
                         <form action="" method="POST">
                             
                             {{-- lay token --}}

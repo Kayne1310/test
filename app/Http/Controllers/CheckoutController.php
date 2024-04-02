@@ -47,6 +47,13 @@ class CheckoutController extends Controller
 
         $data = $req->only('name','email','phone','address');
         $data['customer_id'] = $auth->id;
+        // Calculate total price
+        $totalPrice = Cart::where('customer_id', $auth->id)->sum('price');
+
+        // Prevent checkout if total price is zero
+        if($totalPrice == 0) {
+            return redirect()->back()->with('no', 'Total price is zero. Please add items to your cart.');
+        }
       
         if($order = Order::create($data)) {
             $token = Str::random(40);

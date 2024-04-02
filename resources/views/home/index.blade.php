@@ -227,7 +227,7 @@
                     <div class="col-md-12">
                         <div class="tab-button">   
                             <div class="list-group tab-top" id="list-tab" role="tablist">
-                              <a class="list-item active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">New Colthes</a>
+                              <a class="list-item active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">New Clothes</a>
                               
                             </div>
                         </div>

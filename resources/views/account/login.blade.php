@@ -147,7 +147,7 @@
         @if(Session::has('ok'))
         <script>
             $.toast({
-                heading: 'Thông báo',
+                heading: 'Notificantion',
                 text: "{{ Session::get('ok') }}",
                 showHideTransition: 'slide',
                 icon: 'success',
@@ -161,7 +161,7 @@
         @if(Session::has('no'))
         <script>
             $.toast({
-                heading: 'Thông báo',
+                heading: 'Notificant',
                 text: "{{ Session::get('no') }}",
                 showHideTransition: 'slide',
                 icon: 'error',

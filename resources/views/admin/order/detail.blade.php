@@ -1,22 +1,22 @@
 @extends('master.admin')
 
-@section('title','Chi tiết đơn hàng')
+@section('title','Order Details')
 @section('main')
 @if ($order->status != 2)
     @if ($order->status != 3)
-    <a href="{{ route('order.update', $order->id) }}?status=2" class="btn btn-danger" onclick="return confirm('Bạn có chắc hành động này là gì?')">Đã giao hàng</a>
-    <a href="{{ route('order.update', $order->id) }}?status=3" class="btn btn-warning" onclick="return confirm('Bạn có chắc hành động này là gì?')">Hủy</a>
+    <a href="{{ route('order.update', $order->id) }}?status=2" class="btn btn-danger" onclick="return confirm('Are you sure what this action is?')">Delivered</a>
+    <a href="{{ route('order.update', $order->id) }}?status=3" class="btn btn-warning" onclick="return confirm('Are you sure what this action is?')">Cancel</a>
     @else
-    <a href="{{ route('order.update', $order->id) }}?status=1" class="btn btn-warning" onclick="return confirm('Bạn có chắc hành động này là gì?')">Khoi phục</a>
+    <a href="{{ route('order.update', $order->id) }}?status=1" class="btn btn-warning" onclick="return confirm('Are you sure what this action is?')">Restore</a>
     @endif
 @endif
 <div class="row">
     <div class="col-md-6">
-        <h3>Thông tin khách hàng</h3>
+        <h3>Profile Customer </h3>
         <table class="table">
             <thead>
                 <tr>
-                    <th>Họ tên</th>
+                    <th>User Name</th>
                     <td>{{ $auth->name }}</td>
                 </tr>
                 <tr>
@@ -24,18 +24,19 @@
                     <td>{{ $auth->phone }}</td>
                 </tr>
                 <tr>
-                    <th>Địa chỉ</th>
+                    <th>Address</th>
                     <td>{{ $auth->address }}</td>
                 </tr>
             </thead>
         </table>
     </div>
     <div class="col-md-6">
-        <h3>Thông tin giao hàng</h3>
+        <h3>
+            Delivery Information</h3>
         <table class="table">
             <thead>
                 <tr>
-                    <th>Họ tên</th>
+                    <th>User Name</th>
                     <td>{{ $order->name }}</td>
                 </tr>
                 <tr>
@@ -43,14 +44,14 @@
                     <td>{{ $order->phone }}</td>
                 </tr>
                 <tr>
-                    <th>Địa chỉ</th>
+                    <th>Address</th>
                     <td>{{ $order->address }}</td>
                 </tr>
             </thead>
         </table>
     </div>
 </div>
-<h3>Thông tin sản phẩm</h3>
+<h3>Information Products</h3>
 
 <table class="table">
     <thead>

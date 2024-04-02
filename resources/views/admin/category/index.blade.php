@@ -31,7 +31,7 @@
     <tbody>
         <tr>
             <td>1</td>
-            <td>Toyota</td>
+            <td>Dress</td>
             <td>Hiden</td>
             <td class="text-right">
                 <a href="{{ route('category.edit', 1) }}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
@@ -39,8 +39,8 @@
             </td>
         </tr>
         <tr>
-            <td>1</td>
-            <td>Toyota</td>
+            <td>2</td>
+            <td>Shoes</td>
             <td>Hiden</td>
             <td class="text-right">
                 <a href="{ route('category.edit', 1) }}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
@@ -48,32 +48,15 @@
             </td>
         </tr>
         <tr>
-            <td>1</td>
-            <td>Toyota</td>
+            <td>3</td>
+            <td>Hand Bag</td>
             <td>Hiden</td>
             <td class="text-right">
                 <a href="{ route('category.edit', 1) }}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
                 <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
             </td>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>Toyota</td>
-            <td>Hiden</td>
-            <td class="text-right">
-                <a href="{ route('category.edit', 1) }}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
-                <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
-            </td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Toyota</td>
-            <td>Hiden</td>
-            <td class="text-right">
-                <a href="{ route('category.edit', 1) }}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
-                <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
-            </td>
-        </tr>
+        
     </tbody>
 </table>
 

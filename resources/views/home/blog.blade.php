@@ -1,5 +1,5 @@
 @extends('master.main')
-@section('title','Home')
+@section('title','Blog')
 @section('main')
 
 <div class="header-middle">
@@ -116,7 +116,7 @@
                         <div class="mobile-menu">
                             <nav class="mobile-menu-start">
                                  <ul>
-                                    <li><a href="#">Home</a>
+                                    <li><a href="{{route('home.index')}}">Home</a>
                                         <ul>
                                            
                                         </ul>
@@ -151,7 +151,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="breadcrumb">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="{{route('home.index')}}">Home</a></li>
                             <li>blog</li>
                         </ul>
                     </div>

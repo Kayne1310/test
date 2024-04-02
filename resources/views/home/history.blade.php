@@ -36,7 +36,7 @@
             <div class="col-md-12">
                 <ul class="breadcrumb">
                     <li><a href="{{route('home.index')}}">Home</a></li>
-                    <li><a href="#">Check Out</a></li>
+                    <li><a href="#">History List order</a></li>
                 </ul>
             </div>
         </div>
@@ -98,8 +98,8 @@
                <div class="text-center">
                 <a href="{{route('home.index')}}" class="btn btn-primary" id="continue_shopping">Continue Shopping</a>
                 @if($carts->count())
-                <a href="{{ route('cart.clear') }}" class="btn btn-danger" onclick="return confirm('Are you sure wanto delete all product?')" ><i class="fa fa-trash"></i> Clear shopping</a>
-                <a href="{{ route('order.checkout') }}"" class="btn btn-success">Place Order</a>
+                <a href="{{ route('cart.clear') }}" class="btn btn-danger"id="continue_shopping" onclick="return confirm('Are you sure wanto delete all product?')" ><i class="fa fa-trash"></i> Clear shopping</a>
+                <a href="{{ route('order.checkout') }}"id="continue_shopping" class="btn btn-success">Place Order</a>
                 @endif
                </div>
             </div>

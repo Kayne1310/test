@@ -1,5 +1,17 @@
 @extends('master.admin')
-@section('title','Danh sách đơn hàng')
+
+@foreach ($orders as $item)
+@if ($item->status == 0)
+@section('title','List Orders Unconfirmed')
+@elseif ($item->status == 1)
+@section('title','List Orders Confirm')
+@elseif ($item->status == 2)
+@section('title','List Orders Paid')
+@else
+@section('title','Cancelled')                   
+@endif
+@endforeach
+
 @section('main')
 
     <table class="table">
@@ -17,15 +29,15 @@
                 <tr>
                     <td scope="row">{{ $loop->index + 1 }}</td>
                     <td>{{ $item->created_at->format('d/m/Y') }}</td>
-                    <td>{
+                    <td>
                         @if ($item->status == 0)
-                            <span>Chưa xác nhận</span>
+                            <span>Unconfimred</span>
                         @elseif ($item->status == 1)
-                            <span>Đã xác nhận</span>
-                        @elseif ($item->status == 21)
-                            <span>Đã thanh toán</span>
+                            <span>Confirm</span>
+                        @elseif ($item->status == 2)
+                            <span>paid</span>
                         @else
-                            <span>Đã Hủy</span>
+                            <span>Cancelled</span>
                         @endif
                     </td>
                     <td>{{ number_format($item->totalPrice) }}</td>

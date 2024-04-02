@@ -82,7 +82,7 @@
                                     @csrf
                                   <div class="form-group">
                                     <label for="input-email" class="control-label">Enter Old Password </label>
-                                    <input type="text" class="form-control" id="input-email" placeholder="" name="old_password" required>
+                                    <input type="password" class="form-control" id="input-email" placeholder="" name="old_password" required>
                                   </div>
                                   <div class="form-group">
                                     <label for="password" class="control-label">Enter New Password</label>
@@ -113,7 +113,7 @@
                             <span><i class="fa fa-phone-square"></i></span>
                             <div class="order-right">
                                 <p class="title">ORDER ONLINE NOW</p>
-                                <p class="subline"> Call Us: <span>(0123) 456 789</span></p>
+                                <p class="subline"> Call Us: <span>0868431077</span></p>
                             </div>
                         </div>
                     </div>
@@ -139,4 +139,6 @@
             </div>
         </div>
        
+
+
 @endsection

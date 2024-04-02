@@ -1,5 +1,5 @@
 @extends('master.main')
-@section('title','Home')
+@section('title','Contact')
 @section('main')
 
 <header class="header-area">
