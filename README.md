@@ -50,6 +50,7 @@ Register  </br>
 Change password   </br>
 Update Prodfile     </br>
 Add Product vao ro hang </br> 
+Update Product </br>
 Dat hang check out (gui 1 email hoa don vao email)   </br>
 
 Forgot password(quen mat khau se gui 1 duong link vao email khi ng dung an vao se chuyen den form reset password)  </br>
